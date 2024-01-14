@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,700;1,6..12,600&display=swap');
+
+:root {
+    --black: #000000;
+    --blue: #0D6EFD;
+    --light-grey: #909299;
+    --white: #ffffff;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Nunito Sans';
+}
+
+body {
+    background-color: white;
+    height: 5000px;
+}
+
+.pageContentBox {
+    padding-left: 351px;
+    padding-right: 351px;
+}
+
+
+/* ---------------------------------------------- */
+/* -- CONTROLE DE ESTILZAÇÃO DO CONTAINER HERO -- */
+/* ---------------------------------------------- */
+.container-f {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/img/home-head.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.container-f::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue);
+    opacity: 0.5;
+}
+
+.container-f h1 {
+    display: inline-block;
+    text-align: center;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-weight: lighter;
+    z-index: 0;
+}
+
+/* ------------ */
+/* -- NAVBAR -- */
+/* ------------ */
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+}
+
+.navbar button {
+    padding: 15px 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    /* margin-left: 30px; */
+}
+
+.nav-item {
+    font-weight: 400;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+
+.navbar-nav .nav-link {
+    color: var(--light-grey);
+    /* Cor padrão */
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover {
+    color: var(--blue;
+    /* Cor quando ativo ou hover */
+}
+
+.navbar-nav .nav-item.active .nav-link[href="./index.html"] {
+    color: var(--blue) !important;
+    /* Cor específica para a página "Home" ativa */
+}
