@@ -36,7 +36,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../assets/img/home-head.jpg');
     background-size: cover;
     background-position: top;
 }
@@ -59,6 +58,27 @@ body {
     font-size: 2.5rem;
     font-weight: lighter;
     z-index: 0;
+}
+
+.container-f.pages {
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    background-size: cover;
+    background-position: top;
+}
+
+.container-f h1 {
+    margin: 30px;
+    margin-bottom: 90px;
+    font-weight: bold;
+}
+
+.container-f.pages::before {
+    background-color: var(--black);
 }
 
 /* ------------ */
@@ -88,7 +108,6 @@ body {
     border: none;
 }
 
-
 .navbar-nav .nav-link {
     color: var(--light-grey);
     /* Cor padrão */
@@ -100,7 +119,7 @@ body {
     /* Cor quando ativo ou hover */
 }
 
-.navbar-nav .nav-item.active .nav-link[href="./index.html"] {
+.navbar-nav .nav-item.active .nav-link[href="./"] {
     color: var(--blue) !important;
     /* Cor específica para a página "Home" ativa */
 }
