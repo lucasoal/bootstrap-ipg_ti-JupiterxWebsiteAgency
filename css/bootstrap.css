@@ -148,3 +148,22 @@ a {
     font-size: 15px;
     margin: 0px;
 }
+
+/* ------------- */
+/* -- CONTENT -- */
+/* ------------- */
+.content h4 {
+    font-size: 20px;
+}
+
+.content h2 {
+    font-size: 26px;
+}
+
+.content p {
+    font-size: 12px;
+}
+
+.content span {
+    font-size: 18px;
+}
