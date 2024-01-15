@@ -6,6 +6,7 @@
     --light-blue: #4183FF;
     --light-grey: #909299;
     --white: #ffffff;
+    --ice: #F9FCFF;
 }
 
 html,
@@ -195,16 +196,25 @@ a {
     font-size: 12px;
 }
 
- /* Custom Styles */
- .half-outside {
+/* Custom Styles */
+.half-outside {
     position: relative;
     overflow: hidden;
 }
 
 .half-outside img {
     position: absolute;
-    right: -25%; /* Adjust this value as needed */
+    right: -25%;
+    /* Adjust this value as needed */
     top: 0;
     width: 75%;
     z-index: 1;
+}
+
+.testimonials{
+    background-color: var(--ice);
+}
+
+.testimonials a{
+    font-size: 12px;
 }
