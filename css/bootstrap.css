@@ -218,3 +218,8 @@ a {
 .testimonials a{
     font-size: 12px;
 }
+
+.card-body.page-content h5{
+    font-size: 18px;
+}
+
