@@ -3,8 +3,10 @@
 :root {
     --black: #000000;
     --blue: #0D6EFD;
+    --light-blue: #4183FF;
     --light-grey: #909299;
     --white: #ffffff;
+    --ice: #F9FCFF;
 }
 
 html,
@@ -86,7 +88,7 @@ body {
 /* ------------ */
 .navbar {
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     width: 100%;
     padding: 30px 0px 30px 0px;
 }
@@ -148,3 +150,76 @@ a {
     font-size: 15px;
     margin: 0px;
 }
+
+/* ------------- */
+/* -- CONTENT -- */
+/* ------------- */
+.content h4 {
+    font-size: 20px;
+}
+
+.content h2 {
+    font-size: 26px;
+}
+
+.content p {
+    font-size: 12px;
+}
+
+.content span {
+    font-size: 18px;
+}
+
+/* -- Services Card Grid -- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* -- NO BTN CARD -- */
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+/* Custom Styles */
+.half-outside {
+    position: relative;
+    overflow: hidden;
+}
+
+.half-outside img {
+    position: absolute;
+    right: -25%;
+    /* Adjust this value as needed */
+    top: 0;
+    width: 75%;
+    z-index: 1;
+}
+
+.testimonials{
+    background-color: var(--ice);
+}
+
+.testimonials a{
+    font-size: 12px;
+}
+
+.card-body.page-content h5{
+    font-size: 18px;
+}
+
