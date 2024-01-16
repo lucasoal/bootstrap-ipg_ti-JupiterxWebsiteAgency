@@ -223,3 +223,6 @@ a {
     font-size: 18px;
 }
 
+.container-fluid.map{
+    height: 650px;
+}
