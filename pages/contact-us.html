@@ -84,174 +84,87 @@
     <!-- HERO -->
     <div class="container-fluid map">
         <div id="map-container-google-3" class="z-depth-1-half map-container-3">
-            <iframe src="https://maps.google.com/maps?q=guarda+guarda+portugal&t=k&z=15&ie=UTF8&output=embed" frameborder="0"
-                style="border:0; width: 100%; height: 650px;" allowfullscreen></iframe>
+            <iframe src="https://maps.google.com/maps?q=guarda+guarda+portugal&t=k&z=15&ie=UTF8&output=embed"
+                frameborder="0" style="border:0; width: 100%; height: 650px;" allowfullscreen></iframe>
         </div>
     </div>
 
-    <div class="row g-5">
-        <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Billing address</h4>
-            <form class="needs-validation" novalidate>
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <label for="firstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+
+    <!-- Our Customers -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-top g-5 py-5">
+            <div class="col-lg-6 text-lg-start text-start order-lg-1 order-sm-1">
+                <h4 class="content text-uppercase pb-3">Contact Us</h4>
+                <h2 class="content fw-bold text-body-emphasis lh-1 mb-3 pb-3">Send E-Mail</h2>
+                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident
+                </p>
+                <form class="needs-validation" validate>
+                    <div class="col-12 pb-4">
+                        <label for="email" class="form-label">Name</label>
+                        <input type="name" class="form-control" id="name" required>
                         <div class="invalid-feedback">
-                            Valid first name is required.
+                            Please enter a valid name
                         </div>
                     </div>
 
-                    <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="username" class="form-label">Username</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" id="username" placeholder="Username" required>
-                            <div class="invalid-feedback">
-                                Your username is required.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="email" class="form-label">Email <span
-                                class="text-body-secondary">(Optional)</span></label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="col-12 pb-4">
+                        <label for="email" class="form-label">Your e-mail address</label>
+                        <input type="email" class="form-control" id="email" required>
                         <div class="invalid-feedback">
                             Please enter a valid email address for shipping updates.
                         </div>
                     </div>
 
-                    <div class="col-12">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                        <div class="invalid-feedback">
-                            Please enter your shipping address.
+                    <div class="col-sm-12 pb-4">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" required>
+                    </div>
+
+                    <div class="col-sm-12 pb-4">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" required></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-lg classic_btn" type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6 text-lg-start text-start order-lg-2 order-sm-1">
+                <h6 class="content text-uppercase pb-3">Contact Us</h6>
+                <div class="col mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="bi bi-telephone-fill text-primary" style="font-size: 2rem; margin-right: 10px;"></i>
+                            <div>
+                                <p class="card-title">For More Information Call Us</p>
+                                <h5>+3 (182)-708-1018</h6>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="address2" class="form-label">Address 2 <span
-                                class="text-body-secondary">(Optional)</span></label>
-                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                    </div>
-
-                    <div class="col-md-5">
-                        <label for="country" class="form-label">Country</label>
-                        <select class="form-select" id="country" required>
-                            <option value="">Choose...</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
+                    
+                        <div class="card-body d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill text-primary" style="font-size: 2rem; margin-right: 10px;"></i>
+                            <div>
+                                <p class="card-title">Address</p>
+                                <h5>4321 Eldred Parkways Suite 828 Stephonview / Iceland</h5>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="state" class="form-label">State</label>
-                        <select class="form-select" id="state" required>
-                            <option value="">Choose...</option>
-                            <option>California</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="zip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="" required>
-                        <div class="invalid-feedback">
-                            Zip code required.
-                        </div>
-                    </div>
-                </div>
-
-                <hr class="my-4">
-
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="same-address">
-                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing
-                        address</label>
-                </div>
-
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="save-info">
-                    <label class="form-check-label" for="save-info">Save this information for next time</label>
-                </div>
-
-                <hr class="my-4">
-
-                <h4 class="mb-3">Payment</h4>
-
-                <div class="my-3">
-                    <div class="form-check">
-                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                        <label class="form-check-label" for="credit">Credit card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                        <label class="form-check-label" for="debit">Debit card</label>
-                    </div>
-                    <div class="form-check">
-                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                        <label class="form-check-label" for="paypal">PayPal</label>
-                    </div>
-                </div>
-
-                <div class="row gy-3">
-                    <div class="col-md-6">
-                        <label for="cc-name" class="form-label">Name on card</label>
-                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                        <small class="text-body-secondary">Full name as displayed on card</small>
-                        <div class="invalid-feedback">
-                            Name on card is required
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="cc-number" class="form-label">Credit card number</label>
-                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                        <div class="invalid-feedback">
-                            Credit card number is required
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="cc-expiration" class="form-label">Expiration</label>
-                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                        <div class="invalid-feedback">
-                            Expiration date required
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <label for="cc-cvv" class="form-label">CVV</label>
-                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                        <div class="invalid-feedback">
-                            Security code required
+                    
+                        <div class="card-body d-flex align-items-center">
+                            <i class="bi bi-envelope-fill text-primary" style="font-size: 2rem; margin-right: 10px;"></i>
+                            <div>
+                                <p class="card-title">Send E-mail</p>
+                                <h5>bartholome_price@rowe.net</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <hr class="my-4">
-
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
-            </form>
+            </div>
         </div>
     </div>
-
-
-
-
+    </div>
 
     <!-- FOOTER -->
     <div class="container">
@@ -269,7 +182,8 @@
                     <li class="nav-item footer"><a class="nav-link footer" href="../index.html">Home</a></li>
                     <li class="nav-item footer"><a class="nav-link footer" href="./about-us.html">About Us</a></li>
                     <li class="nav-item footer"><a class="nav-link footer" href="./services.html">Services</a></li>
-                    <li class="nav-item footer"><a class="nav-link footer" href="./portfolios.html">Portfolios</a></li>
+                    <li class="nav-item footer"><a class="nav-link footer" href="./portfolios.html">Portfolios</a>
+                    </li>
                     <li class="nav-item footer"><a class="nav-link footer" href="./blog.html">Blog</a></li>
                     <li class="nav-item footer"><a class="nav-link footer" href="#">Contact Us</a></li>
                 </ul>
